@@ -1,5 +1,7 @@
 :root {
     --header-bg-color: #000, #111122, #1f1f3a, #292855;
+    --bg-color-1: #00072D;
+    --product-gradient: rgb(41, 41, 87), #00072D, #000;
 }
 
 
@@ -10,13 +12,13 @@ body {
  /* -------------------------- Header ------------------------- */
 
 header {
-    background-color: aqua;
+    background-color: #000;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0px 3%;
     height: 10%;
-    background-image: linear-gradient(to bottom, var(--header-bg-color));
+    /* background-image: linear-gradient(to bottom, var(--header-bg-color)); */
 }
 
 header .logo-box{
@@ -52,6 +54,10 @@ header .page-navegation a:hover {
 }
 
 @media screen and (max-width: 500px) {
+    header {
+        justify-content: center;
+    }
+
     header .page-navegation {
         display: none;
     }
@@ -61,11 +67,13 @@ header .page-navegation a:hover {
 /* -------------------------- Pruduct ------------------------- */
 
 main .product-section {
-    background-color: aqua;
+    /* background-color: var(--bg-color-1); */
+    /* background-image: radial-gradient(circle at 80%, var(--product-gradient)); */
+    background-image: linear-gradient(to top, var(--product-gradient));
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 5%;
+    padding-top: 10%;
     padding-left: 10px;
     padding-right: 10px;
 }
@@ -107,4 +115,102 @@ main .iphone-name-section strong {
         margin-top: -10px;
         margin-bottom: -30px;
     }
+}
+
+/* -------------------------- Pruduct Colors ------------------------- */
+main .product-colors-section {
+    background-image: linear-gradient(to bottom, var(--product-gradient));
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5%;
+    padding: 20px;
+}
+
+main .product-colors-section .color-section {
+    width: 25%;
+    margin-top: 40%;
+    /* filter: brightness(.9);
+    filter: saturate(2); */
+}
+
+main .product-colors-section .color-section img {
+    width: 100%;
+}
+
+main .product-colors-section .change_color {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+main .product-colors-section .change_color #color_name {
+    text-transform: capitalize;
+    color: #fff;
+    white-space: nowrap
+}
+
+main .product-colors-section .change_color ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 15px;
+    padding: 10px 15px;
+    background-color: #ffffff8e;
+    border-radius: 50px;
+}
+
+main .product-colors-section .change_color ul li{
+    background-color: #fff;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+main .product-colors-section .about-section {
+    margin-top: 10%;
+    font-size: 3em;
+    font-weight: 500;
+    color: #fff;
+    max-width: 40%;
+}
+
+@media screen and (max-width: 520px){
+    main .product-colors-section {
+        flex-direction: column-reverse;
+    }
+
+    main .product-colors-section .color-section {
+        margin-top: 20%;
+    }
+
+    main .product-colors-section .about-section {
+        margin-top: 35%;
+        font-size: 2em;
+        max-width: 80%;
+    }
+}
+
+#black {
+    background-color: #363636;
+}
+#pink {
+    background-color: #fae4e5;
+}
+#yellow {
+    background-color: #f0e9c3;
+}
+#blue {
+    background-color: #a2c1d9;
+}
+#green {
+    background-color: #cde0c0;
+}
+
+.selected {
+    border: 1px solid #ffffff;
+    box-shadow: 0px 0px 5px #000 inset;
 }

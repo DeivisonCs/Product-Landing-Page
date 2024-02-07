@@ -18,15 +18,15 @@
         <span class="logo-box"><img src="assets/img/apple_logo1.png" alt="Logo"></span>
         
         <nav class="page-navegation">
-            <a href="">Product</a>
-            <a href="">About</a>
+            <a href="#show-product-section">Product</a>
+            <a href="#select-color-section">Colors</a>
             <a href="">Features</a>
             <a href="">Contact Us</a>
         </nav>
     </header>
 
     <main>
-        <section class="product-section">
+        <section id="show-product-section" class="product-section">
             <img class="iphone-central-img" src="assets/img/Apple Iphone 15 Black Smartphone PNG.png" alt="Product Image">
 
             <div class="iphone-name-section">
@@ -36,11 +36,24 @@
             </div>
         </section>
 
-        <section>
-            <img src="" alt="Product Image">
+        <section id="select-color-section" class="product-colors-section">
+            <div class="color-section">
+                <img class="iphone-2-img" src="assets/img/blue_iphone.png" alt="Product Image">
 
-            <div>
-                <p>About Product</p>
+                <div class="change_color">
+                    <span id="color_name">color name</span>
+                    <ul>
+                        <li id="black"></li>
+                        <li id="pink" class="selected"></li>
+                        <li id="yellow"></li>
+                        <li id="blue"></li>
+                        <li id="green"></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="about-section">
+                <p>Designed to make a difference.</p>
             </div>
         </section>
 

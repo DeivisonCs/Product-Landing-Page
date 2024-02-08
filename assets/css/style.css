@@ -1,7 +1,6 @@
 :root {
     --header-bg-color: #000, #111122, #1f1f3a, #292855;
-    --bg-color-1: #00072D;
-    --product-gradient: rgb(41, 41, 87), #00072D, #000;
+    --product-gradient: #292957, #00072D, #000;
 }
 
 
@@ -118,6 +117,7 @@ main .iphone-name-section strong {
 }
 
 /* -------------------------- Pruduct Colors ------------------------- */
+
 main .product-colors-section {
     background-image: linear-gradient(to bottom, var(--product-gradient));
     display: flex;
@@ -125,7 +125,7 @@ main .product-colors-section {
     align-items: center;
     flex-wrap: wrap;
     gap: 5%;
-    padding: 20px;
+    padding: 80px 20px 200px 20px;
 }
 
 main .product-colors-section .color-section {
@@ -168,6 +168,18 @@ main .product-colors-section .change_color ul li{
     width: 30px;
     height: 30px;
     border-radius: 50%;
+    cursor: pointer;
+    animation: ease-in-out 5s;
+}
+
+main .product-colors-section .change_color ul li:hover {
+    border: 1px solid #ffffff;
+}
+
+.selected {
+    border: 1px solid #ffffff;
+    box-shadow: 0px 0px 5px #000 inset;
+    scale: 1.2;
 }
 
 main .product-colors-section .about-section {
@@ -210,7 +222,105 @@ main .product-colors-section .about-section {
     background-color: #cde0c0;
 }
 
-.selected {
-    border: 1px solid #ffffff;
-    box-shadow: 0px 0px 5px #000 inset;
+
+/* -------------------------- Features ------------------------- */
+
+main .features-section {
+    background-color: #000;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 500px;
+    padding: 30px;
+    padding-top: 250px;
+}
+
+main .features-section .feature-section-title {
+    color: #fff;
+    position: absolute;
+    top: 0;
+    left: 4%;
+    font-size: 4em;
+    width: 80%;
+    border-bottom: 3px solid #fff;
+    filter: opacity(.1);
+    user-select: none;
+}
+
+main .features-section .settings-section {
+    padding: 10px;
+    max-width: 70%;
+}
+
+main .features-section .settings-section ul {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 50px;
+    color: #fff;
+    font-size: 1.5em;
+    list-style: none;
+}
+
+main .features-section .settings-section ul li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* max-width: 60%; */
+}
+
+main .features-section .settings-section ul li .zoom-types {
+    display: flex;
+    gap: 10px;
+}
+
+main .features-section .settings-section ul li .zoom-types span{
+    background-color: #ffffff88;
+    font-size: .8em;
+    border-radius: 50%;
+    box-shadow: 0px 0px 3px #ffffff inset;
+    padding: 7px;
+}
+
+
+main .features-section .buy-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 10px;
+    margin-top: 100px;
+}
+
+main .features-section .buy-section .buy-button {
+    background-color: #ffffff54;
+    padding: 10px 20px;
+    border: 3px solid #fff;
+    border-radius: 30px;
+    font-size: 1.6em;
+    color: #fff;
+    box-shadow: 0px 0px 10px #ffffff4f;
+    text-decoration: none;
+    transition: ease-in-out .2s;
+}
+
+main .features-section .buy-section .buy-button:hover {
+    box-shadow: 0px 0px 15px #ffffff4f;
+    padding: 15px 25px;
+    border-radius: 35px;
+    margin-top: -5px;
+    background: linear-gradient(90deg, #f8f8f879, #fdfdfd75);
+}
+
+main .features-section .buy-section .view-more-button {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+main .features-section .buy-section .view-more-button:hover {
+    text-shadow: 0px 0px 15px #ffffff;
 }

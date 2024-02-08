@@ -136,7 +136,7 @@ main .product-colors-section .color-section {
 }
 
 main .product-colors-section .color-section img {
-    width: 100%;
+    width: 90%;
 }
 
 main .product-colors-section .change_color {
@@ -149,7 +149,7 @@ main .product-colors-section .change_color {
 
 main .product-colors-section .change_color #color_name {
     text-transform: capitalize;
-    color: #fff;
+    color: rgba(184, 184, 184, 0.849);
     white-space: nowrap
 }
 
@@ -164,22 +164,22 @@ main .product-colors-section .change_color ul {
 }
 
 main .product-colors-section .change_color ul li{
-    background-color: #fff;
     width: 30px;
     height: 30px;
     border-radius: 50%;
+    border: none;
     cursor: pointer;
     animation: ease-in-out 5s;
 }
 
 main .product-colors-section .change_color ul li:hover {
-    border: 1px solid #ffffff;
+    box-shadow: 0px 0px 5px #000 inset;
 }
 
-.selected {
-    border: 1px solid #ffffff;
+main .product-colors-section .change_color ul .selected {
     box-shadow: 0px 0px 5px #000 inset;
     scale: 1.2;
+    border: 2px solid #ffffff;
 }
 
 main .product-colors-section .about-section {

@@ -12,6 +12,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- ----- SCRIPT ----- -->
+    <script src="assets/js/main.js" defer></script>
+
 
     <title>Product Page</title>
 </head>
@@ -23,7 +26,7 @@
             <a href="#show-product-section">Product</a>
             <a href="#select-color-section">Colors</a>
             <a href="#some-features-section">Features</a>
-            <a href="">Contact Us</a>
+            <a href="#contact-us">Contact Us</a>
         </nav>
     </header>
 
@@ -40,16 +43,17 @@
 
         <section class="product-colors-section">
             <div  id="select-color-section" class="color-section">
-                <img class="iphone-2-img" src="assets/img/black_iphone.png" alt="Product Image">
+                <img id="show-color-iphone" class="iphone-2-img" src="assets/img/black_iphone.png" alt="Product Image">
 
                 <div class="change_color">
-                    <span id="color_name">color name</span>
-                    <ul>
-                        <li id="black"></li>
-                        <li id="pink" class="selected"></li>
-                        <li id="yellow"></li>
-                        <li id="blue"></li>
-                        <li id="green"></li>
+                    <span id="color_name">Black</span>
+
+                    <ul id="iphone-color-selector">
+                        <li id="black" class="show-color selected"></li>
+                        <li id="pink" class="show-color"></li>
+                        <li id="yellow" class="show-color"></li>
+                        <li id="blue" class="show-color"></li>
+                        <li id="green" class="show-color"></li>
                     </ul>
                 </div>
             </div>
@@ -105,8 +109,7 @@
 
     </main>
 
-    <!-- Contact Us Section -->
-    <footer>
+    <footer id="contact-us">
         <div>
             <h3>Shop</h3>
             <ul>
